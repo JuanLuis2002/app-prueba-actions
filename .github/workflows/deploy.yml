@@ -32,5 +32,5 @@ jobs:
             docker stop app-php-container || true
             docker rm app-php-container || true
             cd /home/appPHP
-            docker build -t app-php-image .
-            docker run -d --name app-php-container -p 80:80 app-php-image
+            docker build -t mi-app-php .
+            docker run -d --name app-php-container -p 80:80 mi-app-php
